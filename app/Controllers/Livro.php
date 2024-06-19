@@ -40,7 +40,6 @@ class Livro extends BaseController
         $dados = $this->LivroModel->find($id);
         $dadosObra = $this->ObraModel->find();
         echo view('_partials/header');
-        echo view('_partials/navbar');
         echo view('livro/edit',[
             'livro' => $dados,
             'listaObras'=>$dadosObra

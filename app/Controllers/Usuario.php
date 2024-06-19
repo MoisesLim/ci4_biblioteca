@@ -35,7 +35,6 @@ class Usuario extends BaseController
     public function editar($id){
         $dados = $this->usuarioModel->find($id);
         echo view('_partials/header');
-        echo view('_partials/navbar');
         echo view('usuario/edit',['usuario' => $dados]);
         echo view('_partials/footer');
 

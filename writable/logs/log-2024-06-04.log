@@ -1,7 +1,7 @@
 CRITICAL - 2024-06-04 16:04:56 --> ErrorException: Undefined variable $livos
 in APPPATH/Views/emprestimo/index.php on line 85.
  1 APPPATH/Views/emprestimo/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -9,11 +9,11 @@ in APPPATH/Views/emprestimo/index.php on line 85.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 16:05:21 --> ErrorException: Undefined array key "id_livro"
 in APPPATH/Views/emprestimo/index.php on line 85.
  1 APPPATH/Views/emprestimo/index.php(85): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -21,11 +21,11 @@ in APPPATH/Views/emprestimo/index.php on line 85.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 16:07:00 --> ErrorException: Undefined array key "titulo"
 in APPPATH/Views/emprestimo/index.php on line 86.
  1 APPPATH/Views/emprestimo/index.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -33,11 +33,11 @@ in APPPATH/Views/emprestimo/index.php on line 86.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 16:07:01 --> ErrorException: Undefined array key "titulo"
 in APPPATH/Views/emprestimo/index.php on line 86.
  1 APPPATH/Views/emprestimo/index.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -45,11 +45,11 @@ in APPPATH/Views/emprestimo/index.php on line 86.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 16:13:20 --> ErrorException: Undefined variable $llivros
 in APPPATH/Views/emprestimo/index.php on line 86.
  1 APPPATH/Views/emprestimo/index.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -57,11 +57,11 @@ in APPPATH/Views/emprestimo/index.php on line 86.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:18:21 --> ErrorException: Undefined variable $obra
 in APPPATH/Views/emprestimo/index.php on line 84.
  1 APPPATH/Views/emprestimo/index.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -69,11 +69,11 @@ in APPPATH/Views/emprestimo/index.php on line 84.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:19:59 --> ErrorException: Undefined variable $livros
 in APPPATH/Views/emprestimo/index.php on line 89.
  1 APPPATH/Views/emprestimo/index.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -81,11 +81,11 @@ in APPPATH/Views/emprestimo/index.php on line 89.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:20:00 --> ErrorException: Undefined variable $livros
 in APPPATH/Views/emprestimo/index.php on line 89.
  1 APPPATH/Views/emprestimo/index.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -93,11 +93,11 @@ in APPPATH/Views/emprestimo/index.php on line 89.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:20:00 --> ErrorException: Undefined variable $livros
 in APPPATH/Views/emprestimo/index.php on line 89.
  1 APPPATH/Views/emprestimo/index.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -105,11 +105,11 @@ in APPPATH/Views/emprestimo/index.php on line 89.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:20:53 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/emprestimo/index.php on line 89.
  1 APPPATH/Views/emprestimo/index.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -117,11 +117,11 @@ in APPPATH/Views/emprestimo/index.php on line 89.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:21:39 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/emprestimo/index.php on line 88.
  1 APPPATH/Views/emprestimo/index.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -129,11 +129,11 @@ in APPPATH/Views/emprestimo/index.php on line 88.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:21:48 --> ErrorException: Undefined variable $obra
 in APPPATH/Views/emprestimo/index.php on line 84.
  1 APPPATH/Views/emprestimo/index.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -141,11 +141,11 @@ in APPPATH/Views/emprestimo/index.php on line 84.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:26:09 --> ErrorException: Undefined array key "obra"
 in APPPATH/Views/emprestimo/index.php on line 83.
  1 APPPATH/Views/emprestimo/index.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -153,7 +153,7 @@ in APPPATH/Views/emprestimo/index.php on line 83.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:26:35 --> TypeError: Cannot access offset of type string on string
 in APPPATH/Views/emprestimo/index.php on line 83.
  1 SYSTEMPATH/View/View.php(228): include()
@@ -164,11 +164,11 @@ in APPPATH/Views/emprestimo/index.php on line 83.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-06-04 17:36:33 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 86.
  1 APPPATH/Views/emprestimo/index.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -176,4 +176,4 @@ in APPPATH/Views/emprestimo/index.php on line 86.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')

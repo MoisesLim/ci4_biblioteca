@@ -31,7 +31,7 @@ class Editora extends BaseController
     public function editar($id){
         $dados = $this->editoraModel->find($id);
         echo view('_partials/header');
-        echo view('_partials/navbar');
+      
         echo view('editora/edit',['editora' => $dados]);
         echo view('_partials/footer');
 

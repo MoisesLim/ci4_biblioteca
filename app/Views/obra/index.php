@@ -58,7 +58,7 @@
                 <div class="modal-body">
                    <div class="form-group">
                         <label for="isbn">ISBN</label>
-                        <input id="isbn" name="isbn" type="text" class="form-control" required>
+                        <input id="isbn" name="isbn" type="text" maxlength="17" placeholder="XXX-X-XX-XXXXXX-X" class="form-control" required>
                    </div>
                    <div class="form-group">
                         <label for="titulo">titulo</label>
@@ -70,7 +70,7 @@
                    </div>
                    <div class="form-group">
                         <label for="ano_publicacao">ano_publicacao</label>
-                        <input id="ano_publicacao" name="ano_publicacao" type="text" class="form-control" required>
+                        <input id="ano_publicacao" maxlength="4" placeholder="YYYY" name="ano_publicacao" type="text" class="form-control" required>
                    </div>
                    <div class="form-group" >
                       <label for="editora">Editora</label>
@@ -99,6 +99,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Deletar</h1>
+                <?php foreach($listaObras as $o) :?>
             
             </div>
                 <div class="modal-body">
@@ -109,7 +110,6 @@
                    </div>
                 </div>
                         <div class="modal-footer">
-                        <?php foreach($listaObras as $o) :?>
                         <?=anchor("obra/index/","Cancelar", ["class"=>"btn btn-outline-secondary"])?>
                         <?=anchor("obra/excluir/".$o["id"],"Sim ",["class"=>" btn btn-outline-danger"])?>
                         <?php endforeach ?>
@@ -120,3 +120,26 @@
 </div>
 
 
+<script>
+
+function formatISBN(isbn) {
+            isbn = isbn.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+            isbn = isbn.replace(/(\d{3})(\d)/, "$1-$2"); // Coloca um hífen após os primeiros três dígitos
+            isbn = isbn.replace(/(\d)(\d{2})/, "$1-$2"); // Coloca um hífen após o quarto dígito
+            isbn = isbn.replace(/(\d{2})(\d{6})/, "$1-$2"); // Coloca um hífen após os seis dígitos subsequentes
+            isbn = isbn.replace(/(\d{6})(\d)/, "$1-$2"); // Coloca um hífen após os seis dígitos subsequentes
+            return isbn;
+        }
+
+        document.getElementById('isbn').addEventListener('input', function (e) {
+            e.target.value = formatISBN(e.target.value);
+        });
+
+        function formatAno(ano) {
+            return ano.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+        }
+        document.getElementById('ano').addEventListener('input', function (e) {
+            e.target.value = formatAno(e.target.value);
+        });
+        
+</script>

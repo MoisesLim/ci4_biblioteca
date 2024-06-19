@@ -31,7 +31,7 @@ class Aluno extends BaseController
     public function editar($id){
         $dados = $this->alunoModel->find($id);
         echo view('_partials/header');
-        echo view('_partials/navbar');
+       
         echo view('aluno/edit',['aluno' => $dados]);
         echo view('_partials/footer');
 

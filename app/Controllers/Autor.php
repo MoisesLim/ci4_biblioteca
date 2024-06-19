@@ -31,7 +31,7 @@ class Autor extends BaseController
         public function editar($id){
             $dados = $this->autorModel->find($id);
             echo view('_partials/header');
-            echo view('_partials/navbar');
+           
             echo view('autor/edit',['autor' => $dados]);
             echo view('_partials/footer');
     

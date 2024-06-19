@@ -28,7 +28,7 @@
                     <label for="data_prazo">Prazo</label>
                 </div>
                 <div class="col-10">
-                    <input type="date" name="data_prazo" id="data_prazo" class="form-control" value='<?= $emprestimo['data_prazo'] ?>'>
+                    <input type="int" name="data_prazo" id="data_prazo" class="form-control" value='<?= $emprestimo['data_prazo'] ?>'>
                 </div>
             </div>
             
@@ -48,20 +48,6 @@
                             }
                         }
                         ?>
-                    </select>
-                </div>
-            </div>
-            
-            <div class="row p-2">
-                <div class="col-2">
-                    <label for="id_usuario">Usuário</label>
-                </div>
-                <div class="col-10">
-                    <select class="form-control" id="id_usuario" name="id_usuario">
-                        <?php foreach($listaUsuarios as $usuario) : ?>
-                            <?php $selected = $emprestimo['id_usuario'] == $usuario['id'] ? 'selected' : ''; ?>
-                            <option value="<?= $usuario['id'] ?>" <?= $selected ?>><?= $usuario['nome'] ?></option>
-                        <?php endforeach ?>
                     </select>
                 </div>
             </div>

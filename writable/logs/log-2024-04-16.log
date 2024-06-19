@@ -1,7 +1,7 @@
 CRITICAL - 2024-04-16 17:03:58 --> ErrorException: Undefined array key "name"
 in APPPATH/Views/usuario/edit.php on line 8.
  1 APPPATH/Views/usuario/edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/usuario/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/usuario/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Usuario.php(36): view()
@@ -9,4 +9,4 @@ in APPPATH/Views/usuario/edit.php on line 8.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')

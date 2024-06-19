@@ -5,7 +5,7 @@ in APPPATH/Controllers/Obra.php on line 52.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 17:19:51 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AutorObraModel"
 in SYSTEMPATH/Model.php on line 766.
  1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
@@ -17,7 +17,7 @@ in SYSTEMPATH/Model.php on line 766.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:25:29 --> ParseError: syntax error, unexpected token "<", expecting end of file
 in APPPATH/Views/obra/edit.php on line 58.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -27,7 +27,7 @@ in APPPATH/Views/obra/edit.php on line 58.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:25:34 --> ParseError: syntax error, unexpected token "<", expecting end of file
 in APPPATH/Views/obra/edit.php on line 58.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -37,11 +37,11 @@ in APPPATH/Views/obra/edit.php on line 58.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:29:44 --> ErrorException: Undefined variable $o
 in APPPATH/Views/obra/edit.php on line 59.
  1 APPPATH/Views/obra/edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/obra/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Obra.php(52): view()
@@ -49,7 +49,7 @@ in APPPATH/Views/obra/edit.php on line 59.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:35:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -59,7 +59,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:36:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -69,7 +69,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:37:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -79,7 +79,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:37:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -89,7 +89,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:41:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -99,7 +99,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:41:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -109,7 +109,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:41:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -119,7 +119,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:41:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -129,7 +129,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:43:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -139,7 +139,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:43:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -149,7 +149,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:44:18 --> ParseError: syntax error, unexpected token "endforeach", expecting end of file
 in APPPATH/Views/obra/edit.php on line 61.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -159,7 +159,7 @@ in APPPATH/Views/obra/edit.php on line 61.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:46:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -169,7 +169,7 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:47:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
 in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
@@ -179,11 +179,11 @@ in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:51:59 --> ErrorException: Undefined variable $autores
 in APPPATH/Views/obra/edit.php on line 56.
  1 APPPATH/Views/obra/edit.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/obra/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Obra.php(52): view()
@@ -191,11 +191,11 @@ in APPPATH/Views/obra/edit.php on line 56.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:53:39 --> ErrorException: Undefined variable $autores
 in APPPATH/Views/obra/edit.php on line 57.
  1 APPPATH/Views/obra/edit.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/obra/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Obra.php(52): view()
@@ -203,11 +203,11 @@ in APPPATH/Views/obra/edit.php on line 57.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:55:09 --> ErrorException: Undefined variable $autores
 in APPPATH/Views/obra/edit.php on line 57.
  1 APPPATH/Views/obra/edit.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/obra/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Obra.php(52): view()
@@ -215,18 +215,18 @@ in APPPATH/Views/obra/edit.php on line 57.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-CRITICAL - 2024-05-14 18:55:44 --> ArgumentCountError: Too few arguments to function App\Controllers\Obra::deletarAutor(), 1 passed in /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php on line 941 and exactly 2 expected
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-05-14 18:55:44 --> ArgumentCountError: Too few arguments to function App\Controllers\Obra::deletarAutor(), 1 passed in /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php on line 941 and exactly 2 expected
 in APPPATH/Controllers/Obra.php on line 78.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->deletarAutor()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:57:02 --> ErrorException: Undefined variable $autor
 in APPPATH/Views/obra/edit.php on line 56.
  1 APPPATH/Views/obra/edit.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/obra/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Obra.php(52): view()
@@ -234,11 +234,11 @@ in APPPATH/Views/obra/edit.php on line 56.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:58:03 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/obra/edit.php on line 56.
  1 APPPATH/Views/obra/edit.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/obra/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Obra.php(52): view()
@@ -246,11 +246,11 @@ in APPPATH/Views/obra/edit.php on line 56.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 18:58:04 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/obra/edit.php on line 56.
  1 APPPATH/Views/obra/edit.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/obra/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Obra.php(52): view()
@@ -258,7 +258,7 @@ in APPPATH/Views/obra/edit.php on line 56.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 19:04:57 --> ParseError: syntax error, unexpected end of file
 in APPPATH/Views/obra/edit.php on line 115.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -268,7 +268,7 @@ in APPPATH/Views/obra/edit.php on line 115.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 19:06:23 --> ParseError: syntax error, unexpected end of file
 in APPPATH/Views/obra/edit.php on line 115.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -278,7 +278,7 @@ in APPPATH/Views/obra/edit.php on line 115.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 19:10:23 --> ParseError: syntax error, unexpected end of file
 in APPPATH/Views/obra/edit.php on line 115.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -288,7 +288,7 @@ in APPPATH/Views/obra/edit.php on line 115.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 19:21:37 --> ParseError: syntax error, unexpected end of file
 in APPPATH/Views/obra/edit.php on line 115.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -298,7 +298,7 @@ in APPPATH/Views/obra/edit.php on line 115.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 19:32:55 --> ParseError: syntax error, unexpected end of file
 in APPPATH/Views/obra/edit.php on line 95.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -308,7 +308,7 @@ in APPPATH/Views/obra/edit.php on line 95.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-14 19:33:51 --> ParseError: syntax error, unexpected end of file
 in APPPATH/Views/obra/edit.php on line 116.
  1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -318,4 +318,4 @@ in APPPATH/Views/obra/edit.php on line 116.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')

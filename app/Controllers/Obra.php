@@ -45,7 +45,6 @@ class Obra extends BaseController
         $dadosAutor = $this->autorModel->find();
         $dadosAutorObras = $this->autorObraModel->find();
         echo view('_partials/header');
-        echo view('_partials/navbar');
         echo view('obra/edit',[
             'obra' => $dados,
             'listaAutores'=>$dadosAutor,

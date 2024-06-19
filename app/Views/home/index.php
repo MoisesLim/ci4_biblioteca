@@ -8,8 +8,13 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
+        }
+        .navbar{
+            height: 61.5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
         }
         .header {
             background-color: #004080;
@@ -41,19 +46,119 @@
         .button:hover {
             background-color: #003366;
         }
+        .login-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+        }
+        .user-profile {
+            display: flex;
+            align-items: center;
+        }
+        .user-profile img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+.mini-card {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 200px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 <body>
-    <div class="header">
+    <nav class="navbar navbar-expand-lg  bg-dark mb-0" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <a href="../Home/index" class="navbar-brand">Biblioteca</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <?php foreach($listaUsuarios as $u) : ?>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="../usuario/index">Usuário</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../autor/index">Autor</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../editora/index">Editora</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../aluno/index">Aluno</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../obra/index">Obra</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../livro/index">Livro</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../emprestimo/index">Empréstimo</a></li>
+                        
+                        
+                    </ul>
+                   
+
+                            <div class="mini-card card list-group" id="miniCard">
+                                <tr>
+                                    <li class="list-group-item text-dark"><?=$u['id']?></li>
+                                    <li class="list-group-item text-dark"><?=$u['nome']?></li>
+                                    <li class="list-group-item text-dark"><?=$u['email']?></li>
+                                    <li class="list-group-item text-dark"><?=$u['telefone']?></li>
+                                    <form action="/home/logout" method="post">
+                    <button type="submit" class="btn btn-danger btn-block">Sair</button>
+                </form>
+                                </tr>
+                            </div>
+                    <?php endforeach?>
+            </div> 
+            <a class="navbar-brand ml-10"onclick="toggleCard()"><?=$u['nome']?></a>
+        </div>
+    </nav>
+
+
+    <header class="header">
         <h1>Biblioteca EEEP Walter Ramos de Araújo</h1>
-    </div>
+    </header>
+
     <div class="container">
         <div class="welcome-message">
             <h1>Bem-vindo!</h1>
             <p>Seja bem-vindo à biblioteca da EEEP Walter Ramos de Araújo. Aqui, promovemos o conhecimento, a leitura e a pesquisa. Nossa biblioteca oferece uma vasta coleção de livros, revistas, jornais e acesso a materiais digitais para enriquecer o aprendizado de nossos alunos.</p>
             <p>Estamos comprometidos em criar um ambiente acolhedor e inspirador para todos os estudantes. Sinta-se à vontade para explorar nossos recursos e participar de nossos eventos e atividades.</p>
-            
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Script para lidar com a formatação de telefone
+        function formatTelefone(telefone) {
+            telefone = telefone.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+            telefone = telefone.replace(/(\d{2})(\d)/, "($1) $2"); // Coloca parênteses ao redor dos dois primeiros dígitos e espaço depois
+            telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2"); // Coloca um hífen entre o quinto e o sexto dígitos
+            return telefone;
+        }
+
+        document.getElementById('telefone').addEventListener('input', function (e) {
+            e.target.value = formatTelefone(e.target.value);
+        });
+
+        // Script para lidar com o logout
+        document.getElementById('logout').addEventListener('click', function() {
+            // Aqui você pode adicionar o código para encerrar a sessão
+            alert('Sessão encerrada');
+            // Redirecionar para a página de login ou início
+            window.location.href = 'login.html';
+        });
+    });
+    function toggleCard() {
+    const miniCard = document.getElementById('miniCard');
+    if (miniCard.style.display === 'block') {
+        miniCard.style.display = 'none';
+    } else {
+        miniCard.style.display = 'block';
+    }
+}
+
+
+    </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 CRITICAL - 2024-04-23 16:15:01 --> ErrorException: Undefined array key "name"
 in APPPATH/Views/usuario/edit.php on line 12.
  1 APPPATH/Views/usuario/edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/usuario/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/usuario/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Usuario.php(35): view()
@@ -9,11 +9,11 @@ in APPPATH/Views/usuario/edit.php on line 12.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:15:39 --> ErrorException: Undefined array key "name"
 in APPPATH/Views/usuario/edit.php on line 12.
  1 APPPATH/Views/usuario/edit.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/usuario/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/usuario/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Usuario.php(35): view()
@@ -21,11 +21,11 @@ in APPPATH/Views/usuario/edit.php on line 12.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:33:17 --> ErrorException: Undefined variable $listaAutores
 in APPPATH/Views/autor/index.php on line 14.
  1 APPPATH/Views/autor/index.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -33,7 +33,7 @@ in APPPATH/Views/autor/index.php on line 14.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:34:07 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AutorModel"
 in SYSTEMPATH/Model.php on line 766.
  1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
@@ -45,7 +45,7 @@ in SYSTEMPATH/Model.php on line 766.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:35:22 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 42.
  1 APPPATH/Controllers/Autor.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -53,7 +53,7 @@ in APPPATH/Controllers/Autor.php on line 42.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:36:56 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 42.
  1 APPPATH/Controllers/Autor.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -61,7 +61,7 @@ in APPPATH/Controllers/Autor.php on line 42.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:37:44 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 42.
  1 APPPATH/Controllers/Autor.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -69,7 +69,7 @@ in APPPATH/Controllers/Autor.php on line 42.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:38:52 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 42.
  1 APPPATH/Controllers/Autor.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -77,7 +77,7 @@ in APPPATH/Controllers/Autor.php on line 42.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:40:39 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 46.
  1 APPPATH/Controllers/Autor.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -85,7 +85,7 @@ in APPPATH/Controllers/Autor.php on line 46.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:42:31 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 44.
  1 APPPATH/Controllers/Autor.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -93,7 +93,7 @@ in APPPATH/Controllers/Autor.php on line 44.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:42:35 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 40.
  1 APPPATH/Controllers/Autor.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -101,7 +101,7 @@ in APPPATH/Controllers/Autor.php on line 40.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:49:03 --> ErrorException: Undefined variable $autor
 in APPPATH/Controllers/Autor.php on line 27.
  1 APPPATH/Controllers/Autor.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -109,7 +109,7 @@ in APPPATH/Controllers/Autor.php on line 27.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:50:11 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 41.
  1 APPPATH/Controllers/Autor.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -117,7 +117,7 @@ in APPPATH/Controllers/Autor.php on line 41.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 16:50:52 --> ErrorException: Undefined property: App\Controllers\Autor::$AutorModel
 in APPPATH/Controllers/Autor.php on line 45.
  1 APPPATH/Controllers/Autor.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -125,11 +125,11 @@ in APPPATH/Controllers/Autor.php on line 45.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:00:10 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -137,11 +137,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:00:37 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -149,11 +149,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:00:37 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -161,11 +161,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:00:37 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -173,11 +173,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:00:38 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -185,11 +185,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:00:38 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -197,11 +197,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:01:46 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -209,11 +209,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:01:47 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -221,11 +221,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:01:48 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -233,11 +233,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:01:49 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -245,11 +245,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:01:52 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -257,11 +257,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:02:00 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -269,11 +269,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:02:01 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -281,11 +281,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:02:01 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -293,11 +293,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:02:16 --> ErrorException: Array to string conversion
 in APPPATH/Views/autor/index.php on line 23.
  1 APPPATH/Views/autor/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -305,11 +305,11 @@ in APPPATH/Views/autor/index.php on line 23.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:14:08 --> ErrorException: Undefined variable $autor
 in APPPATH/Views/autor/index.php on line 24.
  1 APPPATH/Views/autor/index.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -317,11 +317,11 @@ in APPPATH/Views/autor/index.php on line 24.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:14:43 --> ErrorException: Undefined variable $autor
 in APPPATH/Views/autor/index.php on line 24.
  1 APPPATH/Views/autor/index.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -329,11 +329,11 @@ in APPPATH/Views/autor/index.php on line 24.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:14:44 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -341,11 +341,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:14:48 --> ErrorException: Undefined variable $autor
 in APPPATH/Views/autor/index.php on line 24.
  1 APPPATH/Views/autor/index.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(23): view()
@@ -353,11 +353,11 @@ in APPPATH/Views/autor/index.php on line 24.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:23:45 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -365,11 +365,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 17:23:58 --> ErrorException: Trying to access array offset on value of type null
 in APPPATH/Views/autor/edit.php on line 6.
  1 APPPATH/Views/autor/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -377,11 +377,11 @@ in APPPATH/Views/autor/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-CRITICAL - 2024-04-23 17:32:26 --> TypeError: anchor(): Argument #2 ($title) must be of type string, array given, called in /opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php on line 18
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-04-23 17:32:26 --> TypeError: anchor(): Argument #2 ($title) must be of type string, array given, called in /opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php on line 18
 in SYSTEMPATH/Helpers/url_helper.php on line 148.
  1 APPPATH/Views/autor/edit.php(18): anchor()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/autor/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/autor/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Autor.php(35): view()
@@ -389,11 +389,11 @@ in SYSTEMPATH/Helpers/url_helper.php on line 148.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 19:19:00 --> ErrorException: Undefined variable $listaAutores
 in APPPATH/Views/aluno/index.php on line 14.
  1 APPPATH/Views/aluno/index.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/aluno/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/aluno/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Aluno.php(22): view()
@@ -401,7 +401,7 @@ in APPPATH/Views/aluno/index.php on line 14.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 19:26:11 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AlunoModel"
 in SYSTEMPATH/Model.php on line 766.
  1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
@@ -413,11 +413,11 @@ in SYSTEMPATH/Model.php on line 766.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 19:27:39 --> ErrorException: Undefined array key "CPF"
 in APPPATH/Views/aluno/index.php on line 24.
  1 APPPATH/Views/aluno/index.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/aluno/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/aluno/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Aluno.php(22): view()
@@ -425,11 +425,11 @@ in APPPATH/Views/aluno/index.php on line 24.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 19:27:51 --> ErrorException: Undefined array key "Nome"
 in APPPATH/Views/aluno/index.php on line 27.
  1 APPPATH/Views/aluno/index.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/aluno/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/aluno/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Aluno.php(22): view()
@@ -437,11 +437,11 @@ in APPPATH/Views/aluno/index.php on line 27.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 19:28:13 --> ErrorException: Undefined array key "emial"
 in APPPATH/Views/aluno/index.php on line 30.
  1 APPPATH/Views/aluno/index.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/aluno/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/aluno/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Aluno.php(22): view()
@@ -449,11 +449,11 @@ in APPPATH/Views/aluno/index.php on line 30.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 19:28:25 --> ErrorException: Undefined variable $autor
 in APPPATH/Views/aluno/edit.php on line 6.
  1 APPPATH/Views/aluno/edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/aluno/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/aluno/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Aluno.php(35): view()
@@ -461,11 +461,11 @@ in APPPATH/Views/aluno/edit.php on line 6.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-04-23 19:32:47 --> ErrorException: Undefined variable $a
 in APPPATH/Views/usuario/index.php on line 29.
  1 APPPATH/Views/usuario/index.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/usuario/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/usuario/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Usuario.php(22): view()
@@ -473,4 +473,4 @@ in APPPATH/Views/usuario/index.php on line 29.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')

@@ -65,7 +65,7 @@
                             <?php endif ?>
                         <?php endforeach ?> 
                         <!-- Button Adicionar Autor da Obra -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Form-add">Adicionar... <i class="fas fa-plus"></i></button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Form-add">Adicionar... <i class="fas fa-plus"></i></button>
                     </div>
                 </div>
                 <div class="row">

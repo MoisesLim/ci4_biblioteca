@@ -4,224 +4,224 @@ in APPPATH/Controllers/Usuario.php on line 17.
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:15:09 --> Error: Undefined constant "App\Controllers\usuarioModel"
 in APPPATH/Controllers/Usuario.php on line 17.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:15:10 --> Error: Undefined constant "App\Controllers\usuarioModel"
 in APPPATH/Controllers/Usuario.php on line 17.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:15:11 --> Error: Undefined constant "App\Controllers\usuarioModel"
 in APPPATH/Controllers/Usuario.php on line 17.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:15:11 --> Error: Undefined constant "App\Controllers\usuarioModel"
 in APPPATH/Controllers/Usuario.php on line 17.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:15:12 --> Error: Undefined constant "App\Controllers\usuarioModel"
 in APPPATH/Controllers/Usuario.php on line 17.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:15:29 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 17.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:18:27 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:19:02 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:19:56 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:19:57 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:11 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:12 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:12 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:13 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:13 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:18 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:19 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:19 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:19 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:57 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:57 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:58 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:20:58 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:07 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:08 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:08 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:08 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:12 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:13 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:13 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:13 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:22 --> ErrorException: Undefined property: App\Controllers\Usuario::$UsuarioModel
 in APPPATH/Controllers/Usuario.php on line 19.
  1 APPPATH/Controllers/Usuario.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -229,147 +229,147 @@ in APPPATH/Controllers/Usuario.php on line 19.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:46 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:21:47 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:22:23 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:22:23 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:22:24 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:22:24 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:22:24 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:23:41 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:23:42 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:23:53 --> Error: Class "App\models\UsuarioModel" not found
 in APPPATH/Controllers/Usuario.php on line 14.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Usuario->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:25:40 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:05 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:06 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:07 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:11 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:11 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:12 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:24 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:25 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:25 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Usuario.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Usuario->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-03-22 11:26:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/index.php"
 in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
  1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
@@ -379,4 +379,4 @@ in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
  5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')

@@ -17,18 +17,28 @@
     </thead>
     <TBody>
     <?php foreach($listaEmprestimo as $em) : ?>
+        <?php
+        $data_inicio = $em['data_inicio'];
+        $data_inicio = explode('-',$data_inicio);
+        $data_inicio = mktime(0,0,0,$data_inicio[1],$data_inicio[2],$data_inicio[0]);
+        $data_fim = $em['data_fim'];
+        $data_fim = explode('-',$data_fim);
+        $data_fim = mktime(0,0,0,$data_fim[1],$data_fim[2],$data_fim[0]);
+            $prazo = $em['data_prazo']*24*60*60;
+            $prazo += $data_inicio;
+           ?>
         <tr>
             <td>
                 <?=$em['id'] ?>
             </td>
             <td>
-                <?=$em['data_inicio'] ?>
+                <?=date('d/m/Y',$data_inicio) ?>
             </td>
             <td>
-                <?=$em['data_fim'] ?>
+                <?=date( 'd/m/Y', $data_fim) ?>
             </td>
             <td>
-                <?=$em['data_prazo'] ?>
+                <?=date( 'd/m/Y', $prazo)?>
             </td>
             <td>
                <?php 
@@ -58,6 +68,12 @@
                 <?=anchor("Emprestimo/excluir/".$em["id"]," ",["class"=>"fas fa-trash-alt btn btn-outline-danger"])?>
                
             </td>
+            <td>
+                <?php
+            if($data_fim - $prazo <= 0){
+                echo '<p class="text-success">Dentro do prazo</p>';
+            }else{echo '<p class="text-danger">Fora do Prazo</p>';}?>
+            </td>
         </tr>
     <?php endforeach ?>
 </TBody>
@@ -72,7 +88,7 @@
 
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Autor</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Emprestimo</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
                 <div class="modal-body">
@@ -81,17 +97,13 @@
                         <input id="data_inicio" name="data_inicio" type="date" class="form-control" required>
                    </div>
                    <div class="form-group">
-                        <label for="data_fim">Data Final</label>
-                        <input id="data_fim" name="data_fim" type="date" class="form-control" required>
-                   </div>
-                   <div class="form-group">
                         <label for="data_prazo">Prazo</label>
-                        <input id="data_prazo" name="data_prazo" type="date" class="form-control" required>
+                        <input id="data_prazo" name="data_prazo" type="int" class="form-control" required>
                    </div>
                    <div class="form-group">
                         <label for="id_livro">Livro</label>
-                        <select class="form-control" id="id_livro" name="id_livro" required>
-    <option selected hidden>Selecione um Livro</option>
+                        <select class="form-control" id="id_livro" name="id_livro" >
+    <option selected hidden required>Selecione um Livro</option>
     <?php 
     $obrasExibidas = array();
     foreach($listaLivros as $livro):
@@ -110,8 +122,8 @@
                    </div>
                    <div class="form-group">
                        <label for="id_usuario">Usuario</label>
-                       <select class="form-control" id="id_usuario" name="id_usuario">
-                        <option selected hidden>Selecione um Usuario</option>
+                       <select class="form-control" id="id_usuario" name="id_usuario" required>
+                        <option selected hidden >Selecione um Usuario</option>
                         <?php foreach($listaUsuarios as $usuarios):?>
                                <option  value="<?=$usuarios['id']?>"><?=$usuarios['nome']?>
                             </option>
@@ -120,8 +132,8 @@
                    </div>
                    <div class="form-group">
                         <label for="id_aluno">Aluno</label>
-                        <select class="form-control" id="id_aluno" name="id_aluno">
-                        <option selected hidden>Selecione um Aluno</option>
+                        <select class="form-control" id="id_aluno" name="id_aluno" required>
+                        <option selected hidden >Selecione um Aluno</option>
                             <?php foreach($listaAlunos as $aluno):?>
                                 <option  value="<?=$aluno['id']?>"><?=$aluno['nome']?>
                         </option>
@@ -129,7 +141,7 @@
                       </select>
                    </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <?=anchor("emprestimo/index/","Cancelar", ["class"=>"btn btn-outline-secondary"])?>
                             <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
         </div>

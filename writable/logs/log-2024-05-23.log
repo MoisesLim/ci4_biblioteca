@@ -1,7 +1,7 @@
 CRITICAL - 2024-05-23 12:20:30 --> ErrorException: Undefined variable $obra
 in APPPATH/Views/livro/edit.php on line 30.
  1 APPPATH/Views/livro/edit.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/edit.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/edit.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(46): view()
@@ -9,32 +9,32 @@ in APPPATH/Views/livro/edit.php on line 30.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:15:19 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Emprestimo.php on line 26.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:16:47 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Emprestimo.php on line 26.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:17:37 --> Error: Call to a member function findAll() on null
 in APPPATH/Controllers/Emprestimo.php on line 26.
  1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->index()
  2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:18:46 --> ErrorException: Undefined variable $listaEmprestimo
 in APPPATH/Views/emprestimo/index.php on line 14.
  1 APPPATH/Views/emprestimo/index.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -42,7 +42,7 @@ in APPPATH/Views/emprestimo/index.php on line 14.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:19:21 --> ErrorException: Undefined variable $editoras
 in APPPATH/Controllers/Emprestimo.php on line 33.
  1 APPPATH/Controllers/Emprestimo.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -50,7 +50,7 @@ in APPPATH/Controllers/Emprestimo.php on line 33.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:19:22 --> ErrorException: Undefined variable $editoras
 in APPPATH/Controllers/Emprestimo.php on line 33.
  1 APPPATH/Controllers/Emprestimo.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -58,7 +58,7 @@ in APPPATH/Controllers/Emprestimo.php on line 33.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:19:40 --> ErrorException: Undefined variable $usuario
 in APPPATH/Controllers/Emprestimo.php on line 33.
  1 APPPATH/Controllers/Emprestimo.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -66,11 +66,11 @@ in APPPATH/Controllers/Emprestimo.php on line 33.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:36:37 --> ErrorException: Undefined variable $livro
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -78,11 +78,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:36:54 --> ErrorException: Undefined variable $livros
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -90,11 +90,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:36:55 --> ErrorException: Undefined variable $livros
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -102,11 +102,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:37:11 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -114,11 +114,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:37:12 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -126,11 +126,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:37:38 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -138,11 +138,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:37:38 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -150,11 +150,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:37:39 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -162,11 +162,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:38:49 --> ErrorException: Undefined array key "diponivel"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -174,11 +174,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:38:50 --> ErrorException: Undefined array key "diponivel"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -186,11 +186,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:42:42 --> ErrorException: Undefined array key "obra"
 in APPPATH/Views/emprestimo/index.php on line 79.
  1 APPPATH/Views/emprestimo/index.php(79): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -198,11 +198,11 @@ in APPPATH/Views/emprestimo/index.php on line 79.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:48:38 --> ErrorException: Undefined variable $listaObras
 in APPPATH/Views/emprestimo/index.php on line 80.
  1 APPPATH/Views/emprestimo/index.php(80): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(33): view()
@@ -210,14 +210,14 @@ in APPPATH/Views/emprestimo/index.php on line 80.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:49:51 --> Error: Class "App\Controllers\ObraModel" not found
 in APPPATH/Controllers/Emprestimo.php on line 19.
  1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Emprestimo->__construct()
  2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:50:16 --> ErrorException: Undefined variable $obras
 in APPPATH/Controllers/Emprestimo.php on line 35.
  1 APPPATH/Controllers/Emprestimo.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -225,7 +225,7 @@ in APPPATH/Controllers/Emprestimo.php on line 35.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:50:16 --> ErrorException: Undefined variable $obras
 in APPPATH/Controllers/Emprestimo.php on line 35.
  1 APPPATH/Controllers/Emprestimo.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -233,11 +233,11 @@ in APPPATH/Controllers/Emprestimo.php on line 35.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:50:38 --> ErrorException: Undefined array key "titulo"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -245,11 +245,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:51:32 --> ErrorException: Undefined array key "titulo"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -257,11 +257,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:51:33 --> ErrorException: Undefined array key "titulo"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -269,11 +269,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:00 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -281,11 +281,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:01 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -293,11 +293,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:47 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -305,11 +305,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:47 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -317,11 +317,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:48 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -329,11 +329,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:48 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -341,11 +341,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:48 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -353,11 +353,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:52:48 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 81.
  1 APPPATH/Views/emprestimo/index.php(81): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -365,11 +365,11 @@ in APPPATH/Views/emprestimo/index.php on line 81.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:56:02 --> ErrorException: Undefined variable $listaUsuario
 in APPPATH/Views/emprestimo/index.php on line 93.
  1 APPPATH/Views/emprestimo/index.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -377,7 +377,7 @@ in APPPATH/Views/emprestimo/index.php on line 93.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:57:51 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
 in SYSTEMPATH/BaseModel.php on line 788.
  1 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
@@ -388,11 +388,11 @@ in SYSTEMPATH/BaseModel.php on line 788.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 13:59:19 --> ErrorException: Undefined variable $emprestimo
 in APPPATH/Views/emprestimo/index.php on line 94.
  1 APPPATH/Views/emprestimo/index.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -400,11 +400,11 @@ in APPPATH/Views/emprestimo/index.php on line 94.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:03:15 --> ErrorException: Undefined variable $emprestimo
 in APPPATH/Views/emprestimo/index.php on line 94.
  1 APPPATH/Views/emprestimo/index.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -412,11 +412,11 @@ in APPPATH/Views/emprestimo/index.php on line 94.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:03:15 --> ErrorException: Undefined variable $emprestimo
 in APPPATH/Views/emprestimo/index.php on line 94.
  1 APPPATH/Views/emprestimo/index.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -424,11 +424,11 @@ in APPPATH/Views/emprestimo/index.php on line 94.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:03:16 --> ErrorException: Undefined variable $emprestimo
 in APPPATH/Views/emprestimo/index.php on line 94.
  1 APPPATH/Views/emprestimo/index.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -436,7 +436,7 @@ in APPPATH/Views/emprestimo/index.php on line 94.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:05:41 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
 in SYSTEMPATH/BaseModel.php on line 788.
  1 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
@@ -447,7 +447,7 @@ in SYSTEMPATH/BaseModel.php on line 788.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:07:10 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
 in SYSTEMPATH/BaseModel.php on line 788.
  1 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
@@ -458,7 +458,7 @@ in SYSTEMPATH/BaseModel.php on line 788.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:11:39 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
 in SYSTEMPATH/BaseModel.php on line 788.
  1 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
@@ -469,7 +469,7 @@ in SYSTEMPATH/BaseModel.php on line 788.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:11:53 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
 in SYSTEMPATH/BaseModel.php on line 788.
  1 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
@@ -480,7 +480,7 @@ in SYSTEMPATH/BaseModel.php on line 788.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:13:19 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
 in SYSTEMPATH/BaseModel.php on line 788.
  1 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
@@ -491,23 +491,23 @@ in SYSTEMPATH/BaseModel.php on line 788.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-23 14:14:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-23 14:14:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(744): CodeIgniter\BaseModel->insert()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(713): CodeIgniter\Model->insert()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#12 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#13 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #14 {main}
 CRITICAL - 2024-05-23 14:14:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -521,7 +521,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:14:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -536,7 +536,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
 10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:14:33 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -552,23 +552,23 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
 11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-23 14:18:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-23 14:18:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(744): CodeIgniter\BaseModel->insert()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(713): CodeIgniter\Model->insert()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#12 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#13 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #14 {main}
 CRITICAL - 2024-05-23 14:18:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -582,7 +582,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:18:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -597,7 +597,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
 10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:18:01 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -613,23 +613,23 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
 11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-23 14:21:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-23 14:21:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(744): CodeIgniter\BaseModel->insert()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(713): CodeIgniter\Model->insert()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#12 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#13 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #14 {main}
 CRITICAL - 2024-05-23 14:21:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -643,7 +643,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:21:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -658,7 +658,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
 10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:21:54 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -674,23 +674,23 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
 11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-23 14:22:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-23 14:22:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(744): CodeIgniter\BaseModel->insert()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(713): CodeIgniter\Model->insert()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#12 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#13 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #14 {main}
 CRITICAL - 2024-05-23 14:22:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -704,7 +704,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:22:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -719,7 +719,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
 10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:22:31 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -735,23 +735,23 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
 11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-23 14:22:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-23 14:22:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(744): CodeIgniter\BaseModel->insert()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(713): CodeIgniter\Model->insert()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#12 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#13 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #14 {main}
 CRITICAL - 2024-05-23 14:22:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -765,7 +765,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:22:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -780,7 +780,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
 10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:22:40 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -796,23 +796,23 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
 11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-23 14:27:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-23 14:27:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(744): CodeIgniter\BaseModel->insert()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(713): CodeIgniter\Model->insert()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#12 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#13 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #14 {main}
 CRITICAL - 2024-05-23 14:27:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -826,7 +826,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:27:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -841,7 +841,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
 10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-23 14:27:15 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -857,4 +857,4 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
 11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')

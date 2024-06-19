@@ -1,17 +1,17 @@
-ERROR - 2024-05-29 16:06:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+ERROR - 2024-05-29 16:06:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:06:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -23,7 +23,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:06:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -36,7 +36,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:06:01 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -50,21 +50,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:06:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:06:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:06:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -76,7 +76,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:06:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -89,7 +89,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:06:33 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -103,21 +103,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:08:26 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:08:26 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:08:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -129,7 +129,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:08:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -142,7 +142,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:08:26 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -156,21 +156,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:09:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:09:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:09:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -182,7 +182,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:09:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -195,7 +195,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:09:16 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -209,21 +209,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:09:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:09:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:09:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -235,7 +235,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:09:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -248,7 +248,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:09:59 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -262,21 +262,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:10:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:10:01 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:10:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -288,7 +288,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:10:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -301,7 +301,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:10:01 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -315,21 +315,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:13:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:13:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:13:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -341,7 +341,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:13:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -354,7 +354,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:13:47 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -368,21 +368,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:14:59 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:14:59 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(20): CodeIgniter\BaseModel->findAll()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->index()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(20): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->index()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:14:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -394,7 +394,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:14:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -407,7 +407,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:14:59 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -421,21 +421,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:15:00 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:15:00 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(20): CodeIgniter\BaseModel->findAll()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->index()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(20): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->index()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:15:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -447,7 +447,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -460,7 +460,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:00 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -474,21 +474,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:15:06 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:15:06 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(31): CodeIgniter\BaseModel->findAll()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->index()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(31): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->index()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:15:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -500,7 +500,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -513,7 +513,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:06 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -527,21 +527,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:15:07 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:15:07 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Emprestimo.php(31): CodeIgniter\BaseModel->findAll()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Emprestimo->index()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(31): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->index()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:15:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -553,7 +553,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -566,7 +566,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:07 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -580,21 +580,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:15:10 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:15:10 --> mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause' in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(20): CodeIgniter\BaseModel->findAll()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->index()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(20): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->index()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:15:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -606,7 +606,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -619,7 +619,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:10 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.deleted_at' in 'where clause'
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -633,21 +633,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:15:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:15:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:15:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -659,7 +659,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -672,7 +672,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:15:49 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -686,21 +686,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:17:25 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:17:25 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:17:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -712,7 +712,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:17:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -725,7 +725,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:17:25 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -739,21 +739,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:19:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:19:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Usuario.php(53): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Usuario->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:19:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -765,7 +765,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:19:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -778,7 +778,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:19:57 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -792,21 +792,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:42:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:42:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Autor.php(45): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Autor->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Autor.php(45): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Autor->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:42:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -818,7 +818,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:42:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -831,7 +831,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:42:30 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -845,21 +845,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:48:34 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:48:34 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:48:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -871,7 +871,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:48:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -884,7 +884,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:48:34 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -898,21 +898,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:48:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:48:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:48:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -924,7 +924,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:48:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -937,7 +937,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:48:59 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -951,21 +951,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:53:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_2` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:53:38 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_2` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Obra->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:53:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_2` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -977,7 +977,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:53:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_2` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -990,7 +990,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:53:38 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_2` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -1004,21 +1004,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:54:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:54:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Autor.php(45): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Autor->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Autor.php(45): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Autor->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:54:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -1030,7 +1030,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:54:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -1043,7 +1043,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:54:33 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`autor_obra`, CONSTRAINT `autor_obra_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -1057,21 +1057,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 16:54:52 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 16:54:52 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 16:54:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -1083,7 +1083,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:54:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -1096,7 +1096,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:54:52 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -1110,11 +1110,11 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:55:08 --> ErrorException: Undefined variable $obra
 in APPPATH/Views/livro/index.php on line 34.
  1 APPPATH/Views/livro/index.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1122,11 +1122,11 @@ in APPPATH/Views/livro/index.php on line 34.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 16:55:12 --> ErrorException: Undefined variable $obra
 in APPPATH/Views/livro/index.php on line 34.
  1 APPPATH/Views/livro/index.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1134,7 +1134,7 @@ in APPPATH/Views/livro/index.php on line 34.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:04:07 --> ErrorException: Undefined variable $dadosLivros
 in APPPATH/Controllers/Emprestimo.php on line 56.
  1 APPPATH/Controllers/Emprestimo.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
@@ -1142,11 +1142,11 @@ in APPPATH/Controllers/Emprestimo.php on line 56.
  3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:19:36 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 32.
  1 APPPATH/Views/livro/index.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1154,7 +1154,7 @@ in APPPATH/Views/livro/index.php on line 32.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:20:42 --> Error: Undefined constant "obras"
 in APPPATH/Views/livro/index.php on line 33.
  1 SYSTEMPATH/View/View.php(228): include()
@@ -1165,7 +1165,7 @@ in APPPATH/Views/livro/index.php on line 33.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:20:42 --> Error: Undefined constant "obras"
 in APPPATH/Views/livro/index.php on line 33.
  1 SYSTEMPATH/View/View.php(228): include()
@@ -1176,11 +1176,11 @@ in APPPATH/Views/livro/index.php on line 33.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:20:56 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1188,11 +1188,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:22:01 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1200,11 +1200,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:23:40 --> ErrorException: Undefined array key 25
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1212,11 +1212,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:23:41 --> ErrorException: Undefined array key 25
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1224,11 +1224,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:24:00 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1236,11 +1236,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:24:05 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1248,11 +1248,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:24:05 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1260,11 +1260,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:24:06 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1272,11 +1272,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:24:06 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1284,11 +1284,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:24:06 --> ErrorException: Undefined variable $obras
 in APPPATH/Views/livro/index.php on line 35.
  1 APPPATH/Views/livro/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1296,11 +1296,11 @@ in APPPATH/Views/livro/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:34:50 --> ErrorException: Undefined array key "obra_id"
 in APPPATH/Views/livro/index.php on line 32.
  1 APPPATH/Views/livro/index.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/livro/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Livro.php(28): view()
@@ -1308,21 +1308,21 @@ in APPPATH/Views/livro/index.php on line 32.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 17:35:31 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 17:35:31 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 17:35:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -1334,7 +1334,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:35:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -1347,7 +1347,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:35:31 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -1361,21 +1361,21 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
-ERROR - 2024-05-29 17:35:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php:306
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-05-29 17:35:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
 Stack trace:
-#0 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/MySQLi/Connection.php(306): mysqli->query()
-#1 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
-#2 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
-#3 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
-#4 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
-#5 /opt/lampp/htdocs/ci4_biblioteca_copia/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
-#6 /opt/lampp/htdocs/ci4_biblioteca_copia/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
-#7 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
-#8 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
-#9 /opt/lampp/htdocs/ci4_biblioteca_copia/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
-#10 /opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php(79): CodeIgniter\CodeIgniter->run()
-#11 /opt/lampp/htdocs/ci4_biblioteca_copia/system/Commands/Server/rewrite.php(47): require_once('...')
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(61): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
 #12 {main}
 CRITICAL - 2024-05-29 17:35:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/BaseConnection.php on line 647.
@@ -1387,7 +1387,7 @@ in SYSTEMPATH/Database/BaseConnection.php on line 647.
  6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
- 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:35:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
@@ -1400,7 +1400,7 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
  8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:35:35 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
 in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
@@ -1414,11 +1414,11 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
  9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:45:17 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 35.
  1 APPPATH/Views/emprestimo/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -1426,11 +1426,11 @@ in APPPATH/Views/emprestimo/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:45:51 --> ErrorException: Undefined array key "id_obra"
 in APPPATH/Views/emprestimo/index.php on line 35.
  1 APPPATH/Views/emprestimo/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -1438,11 +1438,11 @@ in APPPATH/Views/emprestimo/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:47:28 --> ErrorException: Undefined array key "titulo"
 in APPPATH/Views/emprestimo/index.php on line 35.
  1 APPPATH/Views/emprestimo/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -1450,11 +1450,11 @@ in APPPATH/Views/emprestimo/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:47:35 --> ErrorException: Undefined array key "nome"
 in APPPATH/Views/emprestimo/index.php on line 35.
  1 APPPATH/Views/emprestimo/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -1462,11 +1462,11 @@ in APPPATH/Views/emprestimo/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
 CRITICAL - 2024-05-29 17:47:51 --> ErrorException: Undefined array key "titulo"
 in APPPATH/Views/emprestimo/index.php on line 35.
  1 APPPATH/Views/emprestimo/index.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca_copia/app/Views/emprestimo/index.php')
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/emprestimo/index.php')
  3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/Emprestimo.php(36): view()
@@ -1474,4 +1474,4 @@ in APPPATH/Views/emprestimo/index.php on line 35.
  7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
-10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca_copia/public/index.php')
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
