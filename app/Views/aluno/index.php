@@ -23,7 +23,7 @@
                 <td><?=$a['turma']?></td>
                 <td>
                     <?=anchor("Aluno/editar/".$a['id'], " ", ["class"=>"fas fa-edit btn btn-primary"])?>
-                    <?=anchor("Aluno/excluir/".$a['id'], " ", ["class"=>"fas fa-trash-alt btn btn-outline-danger delete-button", "data-id"=>$a['id']])?>
+                    <?=anchor("Aluno/excluir/".$a['id'], " ", ["class"=>"fas fa-trash-alt btn btn-outline-danger delete-button", "data-nome"=>$a['nome'],"data-turma"=>$a['turma']])?>
                 </td>
             </tr>
             <?php endforeach ?>
@@ -90,8 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
     deleteButtons.forEach(function(button) {
         button.addEventListener('click', function(event) {
             event.preventDefault();
-            var id = this.getAttribute('data-id');
-            var confirmDelete = confirm("Você tem certeza que deseja deletar o aluno com ID " + id + "?");
+            var Nome = this.getAttribute('data-Nome');
+            var turma = this.getAttribute('data-turma');
+            var confirmDelete = confirm("Você tem certeza que deseja deletar o aluno  " + Nome + " da turma do "+ turma +"?");
             
             if (confirmDelete) {
                 window.location.href = this.getAttribute('href');

@@ -77,43 +77,6 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  bg-dark mb-0" data-bs-theme="dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Logo</a>
-            <a href="../Home/index" class="navbar-brand">Biblioteca</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <?php foreach($listaUsuarios as $u) : ?>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="../usuario/index">Usuário</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../autor/index">Autor</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../editora/index">Editora</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../aluno/index">Aluno</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../obra/index">Obra</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../livro/index">Livro</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../emprestimo/index">Empréstimo</a></li>
-                        
-                        
-                    </ul>
-                   
-
-                            <div class="mini-card card list-group" id="miniCard">
-                                <tr>
-                                    <li class="list-group-item text-dark"><?=$u['id']?></li>
-                                    <li class="list-group-item text-dark"><?=$u['nome']?></li>
-                                    <li class="list-group-item text-dark"><?=$u['email']?></li>
-                                    <li class="list-group-item text-dark"><?=$u['telefone']?></li>
-                                    <form action="/home/logout" method="post">
-                    <button type="submit" class="btn btn-danger btn-block">Sair</button>
-                </form>
-                                </tr>
-                            </div>
-                    <?php endforeach?>
-            </div> 
-            <a class="navbar-brand ml-10"onclick="toggleCard()"><?=$u['nome']?></a>
-        </div>
-    </nav>
-
 
     <header class="header">
         <h1>Biblioteca EEEP Walter Ramos de Araújo</h1>

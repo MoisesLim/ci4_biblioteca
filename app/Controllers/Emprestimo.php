@@ -78,7 +78,3 @@ class Emprestimo extends BaseController
         return redirect()->to('Emprestimo/index');
     }
 }
-
-
-
-

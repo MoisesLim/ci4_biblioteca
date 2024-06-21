@@ -30,5 +30,9 @@
         </li>
       
     </div>
+    <p class="pull-left text-white"><?=session()->get('email')?></p> 
+    <form action="/home/logout" method="post">
+                    <button type="submit" class="btn btn-danger btn-block">Sair</button>
+                </form>
   </div>
 </nav>

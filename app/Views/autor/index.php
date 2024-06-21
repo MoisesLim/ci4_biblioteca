@@ -14,7 +14,7 @@
                 <td><?=$a['nome']?></td>
                 <td>
                     <?=anchor("Autor/editar/".$a['id'], " ", ["class"=>"fas fa-edit btn btn-primary"])?>
-                    <?=anchor("Autor/excluir/".$a['id'], " ", ["class"=>"fas fa-trash-alt btn btn-outline-danger delete-button", "data-id"=>$a['id']])?>
+                    <?=anchor("Autor/excluir/".$a['id'], " ", ["class"=>"fas fa-trash-alt btn btn-outline-danger delete-button", "data-nome"=>$a['nome']])?>
                </td>
             </tr>
         <?php endforeach ?>
@@ -29,7 +29,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Autor</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           
             </div>
             <div class="modal-body">
                 <div class="form-group">
@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     deleteButtons.forEach(function(button) {
         button.addEventListener('click', function(event) {
             event.preventDefault();
-            var id = this.getAttribute('data-id');
-            var confirmDelete = confirm("Você tem certeza que deseja deletar o autor com ID " + id + "?");
+            var nome = this.getAttribute('data-nome');
+            var confirmDelete = confirm("Você tem certeza que deseja deletar o autor " + nome + "?");
             
             if (confirmDelete) {
                 window.location.href = this.getAttribute('href');

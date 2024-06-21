@@ -19,7 +19,7 @@
                 <td><?=$a['telefone']?></td>
                 <td>
                     <?=anchor("Editora/editar/".$a['id'], " ", ["class"=>"fas fa-edit btn btn-primary"])?>
-                    <?=anchor("Editora/excluir/".$a['id'], " ", ["class"=>"fas fa-trash-alt btn btn-outline-danger delete-button", "data-id"=>$a['id']])?>
+                    <?=anchor("Editora/excluir/".$a['id'], " ", ["class"=>"fas fa-trash-alt btn btn-outline-danger delete-button", "data-nome"=>$a['nome']])?>
                 </td>
             </tr>
             <?php endforeach ?>
@@ -34,7 +34,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Nova Editora</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              
             </div>
             <div class="modal-body">
                 <div class="form-group">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group">
                     <label for="telefone">Telefone</label>
-                    <input id="telefone" name="telefone" type="tel" class="form-control" required>
+                    <input id="telefone" name="telefone"  maxlength="15" placeholder="(00) 00000-0000" type="tel" class="form-control" required>
                 </div>
             </div>
             <div class="modal-footer">
@@ -66,13 +66,25 @@ document.addEventListener('DOMContentLoaded', function() {
     deleteButtons.forEach(function(button) {
         button.addEventListener('click', function(event) {
             event.preventDefault();
-            var id = this.getAttribute('data-id');
-            var confirmDelete = confirm("Você tem certeza que deseja deletar a editora com ID " + id + "?");
+            var nome = this.getAttribute('data-nome');
+            var confirmDelete = confirm("Você tem certeza que deseja deletar a editora " + nome + "?");
             
             if (confirmDelete) {
                 window.location.href = this.getAttribute('href');
             }
         });
     });
+});
+
+
+function formatTelefone(telefone) {
+    telefone = telefone.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+    telefone = telefone.replace(/(\d{2})(\d)/, "($1) $2"); // Coloca parênteses ao redor dos dois primeiros dígitos e espaço depois
+    telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2"); // Coloca um hífen entre o quinto e o sexto dígitos
+    return telefone;
+}
+
+document.getElementById('telefone').addEventListener('input', function (e) {
+    e.target.value = formatTelefone(e.target.value);
 });
 </script>

@@ -42,9 +42,10 @@ class Login extends Controller
 
         // Verificar se o usuário existe
         if ($query->getNumRows() > 0) {
-            // Criar sessão
+            $usuario = $query->getResult('array');
             $this->session->set('logged_in', true);
-            $this->session->set('email', $email);
+            $this->session->set('email', $usuario[0]['email']);
+            $this->session->set('id', $usuario[0]['id']);
 
             // Redirecionar para a página de dashboard
             return redirect()->to(base_url('Home/index'));

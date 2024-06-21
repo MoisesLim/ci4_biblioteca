@@ -19,9 +19,7 @@
                     <td><?=$u['telefone']?></td>
                     <td>
                         <?=anchor("Usuario/editar/".$u['id'], "<i class='fas fa-edit'></i>", ["class"=>"btn btn-primary"])?>
-                        <button type="button" class="btn btn-outline-danger delete-button" data-id="<?=$u['id']?>" data-nome="<?=$u['nome']?>" data-email="<?=$u['email']?>" data-telefone="<?=$u['telefone']?>" data-toggle="modal" data-target="#confirmDeleteModal">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
+                        <?=anchor("Usuario/excluir/".$u['id'], " ", ["class"=>"fas fa-trash-alt btn btn-outline-danger delete-button", "data-nome"=>$u['nome'],"data-email"=>$u['email']])?>
                     </td>
                 </tr>
             <?php endforeach?>
@@ -60,53 +58,24 @@
     <?=form_close()?>
 </div>
 
-<!-- Modal de confirmação de exclusão -->
-<div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Confirmação de exclusão</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Tem certeza que deseja excluir o usuário com as seguintes informações?</p>
-                <ul id="userInfoList" class="list-group">
-                    <!-- As informações do usuário selecionado serão preenchidas aqui -->
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" id="confirmDeleteButton" class="btn btn-danger">Excluir</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     var deleteButtons = document.querySelectorAll('.delete-button');
     
     deleteButtons.forEach(function(button) {
         button.addEventListener('click', function(event) {
             event.preventDefault();
-            var nome = this.getAttribute('data-nome');
+            var Nome = this.getAttribute('data-Nome');
             var email = this.getAttribute('data-email');
-            var telefone = this.getAttribute('data-telefone');
-            document.getElementById('userInfoList').innerHTML = `
-                <li class="list-group-item"><strong>Nome:</strong> ${nome}</li>
-                <li class="list-group-item"><strong>Email:</strong> ${email}</li>
-                <li class="list-group-item"><strong>Telefone:</strong> ${telefone}</li>
-            `;
-            var deleteUrl = this.getAttribute('href');
-            document.getElementById('confirmDeleteButton').addEventListener('click', function() {
-                window.location.href = deleteUrl;
-            });
-            $('#confirmDeleteModal').modal('show');
+            var confirmDelete = confirm("Você tem certeza que deseja deletar o aluno  " + Nome + " com o email "+ email +"?");
+            
+            if (confirmDelete) {
+                window.location.href = this.getAttribute('href');
+            }
         });
     });
 });
+
 
 function formatTelefone(telefone) {
     telefone = telefone.replace(/\D/g, ""); // Remove todos os caracteres não numéricos

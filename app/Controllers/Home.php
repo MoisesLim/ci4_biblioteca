@@ -13,6 +13,7 @@ class Home extends BaseController
     {
         $usuarios = $this->usuarioModel->findAll();
         echo view('_partials/header');
+        echo view('_partials/navbar');
         echo view('home/index',['listaUsuarios' => $usuarios]);
         echo view('_partials/footer');
 

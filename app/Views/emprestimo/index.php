@@ -121,14 +121,7 @@
 
                    </div>
                    <div class="form-group">
-                       <label for="id_usuario">Usuario</label>
-                       <select class="form-control" id="id_usuario" name="id_usuario" required>
-                        <option selected hidden >Selecione um Usuario</option>
-                        <?php foreach($listaUsuarios as $usuarios):?>
-                               <option  value="<?=$usuarios['id']?>"><?=$usuarios['nome']?>
-                            </option>
-                            <?php endforeach ?>
-                      </select>
+                            <input class="form-control" id="id_usuario" name="id_usuario" value="<?=session()->get('id')?>" type='hidden'>
                    </div>
                    <div class="form-group">
                         <label for="id_aluno">Aluno</label>
