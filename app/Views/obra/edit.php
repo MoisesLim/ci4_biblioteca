@@ -3,14 +3,15 @@
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6 bg-dark text-white p-4" data-bs-theme="dark">
-            <?= form_open("Obra/salvar") ?>
+            <?= form_open("Obra/salvar", ["onsubmit" => "return validateForm()"]) ?>
                 <input type="hidden" name="id" id="id" value="<?= $obra['id'] ?>">
                 <div class="row p-2">
                     <div class="col-2">
                         <label for="isbn">ISBN</label>
                     </div>
                     <div class="col-10">
-                        <input type="text" name="isbn" id="isbn" class="form-control" value="<?= $obra['isbn'] ?>">
+                        <input type="text" maxlength="17" placeholder="XXX-X-XX-XXXXXX-X" name="isbn" id="isbn" class="form-control" value="<?= $obra['isbn'] ?>">
+                        <span id="isbn-error" class="error-message">Formato do ISBN incorreto</span>
                     </div>
                 </div>
                 <div class="row p-2">
@@ -34,7 +35,7 @@
                         <label for="ano_publicacao">Ano</label>
                     </div>
                     <div class="col-10">
-                        <input type="text" name="ano_publicacao" id="ano_publicacao" class="form-control" value="<?= $obra['ano_publicacao'] ?>">
+                        <input type="text" name="ano_publicacao" maxlength="4" placeholder="Ano" id="ano_publicacao" class="form-control" value="<?= $obra['ano_publicacao'] ?>">
                     </div>
                 </div>
                 <div class="row p-2">
@@ -109,3 +110,55 @@
         </div>
     <?= form_close() ?>
 </div>
+
+<style>
+    .error-message {
+        display: none;
+        color: red;
+        margin-top: 5px;
+    }
+</style>
+
+<script>
+    function formatISBN(isbn) {
+        isbn = isbn.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+        isbn = isbn.replace(/(\d{3})(\d)/, "$1-$2"); // Coloca um hífen após os primeiros três dígitos
+        isbn = isbn.replace(/(\d)(\d{2})/, "$1-$2"); // Coloca um hífen após o quarto dígito
+        isbn = isbn.replace(/(\d{2})(\d{6})/, "$1-$2"); // Coloca um hífen após os seis dígitos subsequentes
+        isbn = isbn.replace(/(\d{6})(\d)/, "$1-$2"); // Coloca um hífen após os seis dígitos subsequentes
+        return isbn;
+    }
+
+    document.getElementById('isbn').addEventListener('input', function (e) {
+        let value = e.target.value;
+        value = formatISBN(value);
+        e.target.value = value;
+
+        const errorMessage = document.getElementById('isbn-error');
+        if (value.length !== 17) {
+            errorMessage.style.display = 'block';
+        } else {
+            errorMessage.style.display = 'none';
+        }
+    });
+
+    function validateForm() {
+        const isbn = document.getElementById('isbn').value;
+        const errorMessage = document.getElementById('isbn-error');
+        if (isbn.length !== 17) {
+            errorMessage.style.display = 'block';
+            return false; // Impede o envio do formulário
+        } else {
+            errorMessage.style.display = 'none';
+            return true; // Permite o envio do formulário
+        }
+    }
+
+    function formatAno(ano) {
+        return ano.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+    }
+
+    document.getElementById('ano_publicacao').addEventListener('input', function (e) {
+        e.target.value = formatAno(e.target.value);
+    });
+</script>

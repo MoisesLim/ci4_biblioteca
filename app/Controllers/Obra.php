@@ -26,9 +26,10 @@ class Obra extends BaseController
     {
         $dados = $this->obraModel->findAll();
         $editoras = $this->editoraModel->findAll();
+        $dadosAutorObras = $this->autorObraModel->find();
         echo view('_partials/header');
         echo view('_partials/navbar');
-        echo view('obra/index',['listaObras' => $dados,'listaEditoras'=>$editoras]);
+        echo view('obra/index',['listaObras' => $dados,'listaAutoresObras'=>$dadosAutorObras,'listaEditoras'=>$editoras]);
         echo view('_partials/footer');
     }
     //cadastra o obra, coloca uma senha  e redireciona para a tela inicial

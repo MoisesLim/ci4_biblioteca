@@ -251,3 +251,1458 @@ INFO - 2024-06-21 16:05:40 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-06-21 16:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-21 16:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-21 16:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 16:16:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-06-21 16:16:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 16:16:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 6 APPPATH/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 16:16:29 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_3` FOREIGN KEY (`id_aluno`) REFERENCES `aluno` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/Aluno.php(45): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Aluno->excluir()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 16:17:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`obra`, CONSTRAINT `obra_ibfk_1` FOREIGN KEY (`id_editora`) REFERENCES `editora` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Editora.php(45): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Editora->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-06-21 16:17:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`obra`, CONSTRAINT `obra_ibfk_1` FOREIGN KEY (`id_editora`) REFERENCES `editora` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Editora.php(45): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Editora->excluir()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 16:17:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`obra`, CONSTRAINT `obra_ibfk_1` FOREIGN KEY (`id_editora`) REFERENCES `editora` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 6 APPPATH/Controllers/Editora.php(45): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Editora->excluir()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 16:17:00 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`obra`, CONSTRAINT `obra_ibfk_1` FOREIGN KEY (`id_editora`) REFERENCES `editora` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/Editora.php(45): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Editora->excluir()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:38:56 --> ErrorException: Undefined variable $obra
+in APPPATH/Views/obra/index.php on line 7.
+ 1 APPPATH/Views/obra/index.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:39:24 --> ErrorException: Undefined variable $obra
+in APPPATH/Views/obra/index.php on line 7.
+ 1 APPPATH/Views/obra/index.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:39:24 --> ErrorException: Undefined variable $obra
+in APPPATH/Views/obra/index.php on line 7.
+ 1 APPPATH/Views/obra/index.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:39:24 --> ErrorException: Undefined variable $obra
+in APPPATH/Views/obra/index.php on line 7.
+ 1 APPPATH/Views/obra/index.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:39:25 --> ErrorException: Undefined variable $obra
+in APPPATH/Views/obra/index.php on line 7.
+ 1 APPPATH/Views/obra/index.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:43:16 --> ErrorException: Undefined array key "autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:44:09 --> ErrorException: Undefined array key "autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:44:10 --> ErrorException: Undefined array key "autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:44:11 --> ErrorException: Undefined array key "autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:44:11 --> ErrorException: Undefined array key "autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:44:27 --> ErrorException: Undefined array key "id_autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:44:28 --> ErrorException: Undefined array key "id_autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:44:53 --> ErrorException: Undefined array key "id_autores"
+in APPPATH/Views/obra/index.php on line 20.
+ 1 APPPATH/Views/obra/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 16:51:33 --> ErrorException: Undefined variable $dadosAutorObras
+in APPPATH/Controllers/Obra.php on line 31.
+ 1 APPPATH/Controllers/Obra.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 16:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 16:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 17:14:45 --> ErrorException: Undefined variable $a
+in APPPATH/Views/obra/index.php on line 44.
+ 1 APPPATH/Views/obra/index.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/obra/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Obra.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:17:26 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-06-21 17:17:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:17:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 6 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:17:26 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:17:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-06-21 17:17:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:17:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 6 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:17:29 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:17:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-06-21 17:17:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:17:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 6 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:17:35 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:18:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-06-21 17:18:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:18:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 6 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:18:18 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/Obra.php(67): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Obra->excluir()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:18:27 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+#6 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(60): CodeIgniter\BaseModel->delete()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+#8 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2024-06-21 17:18:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Livro.php(60): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:18:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 6 APPPATH/Controllers/Livro.php(60): CodeIgniter\BaseModel->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:18:27 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete()
+ 7 APPPATH/Controllers/Livro.php(60): CodeIgniter\BaseModel->delete()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->excluir()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:25:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:25:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:25:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:25:46 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:26:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:26:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:26:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:26:02 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-06-21 17:26:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:26:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:26:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:26:07 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:30:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:30:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:30:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:30:08 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`emprestimo`, CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/Emprestimo.php(42): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Emprestimo->cadastrar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:40:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(807): CodeIgniter\BaseModel->update()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(711): CodeIgniter\Model->update()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:40:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 5 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:40:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 7 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:40:49 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 8 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-06-21 17:40:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(807): CodeIgniter\BaseModel->update()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(711): CodeIgniter\Model->update()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:40:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 5 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:40:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 7 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:40:55 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 8 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:41:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(807): CodeIgniter\BaseModel->update()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(711): CodeIgniter\Model->update()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:41:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 5 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:41:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 7 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:41:12 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 8 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:41:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(807): CodeIgniter\BaseModel->update()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(711): CodeIgniter\Model->update()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:41:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 5 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:41:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 7 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:41:54 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 8 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:42:29 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(807): CodeIgniter\BaseModel->update()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(711): CodeIgniter\Model->update()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:42:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 5 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:42:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 7 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:42:29 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 8 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-21 17:44:08 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(807): CodeIgniter\BaseModel->update()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(711): CodeIgniter\Model->update()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:44:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 5 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:44:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 7 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:44:08 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 8 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+ERROR - 2024-06-21 17:44:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`)) in /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/ci4_biblioteca/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/ci4_biblioteca/system/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+#5 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+#6 /opt/lampp/htdocs/ci4_biblioteca/system/Model.php(807): CodeIgniter\BaseModel->update()
+#7 /opt/lampp/htdocs/ci4_biblioteca/system/BaseModel.php(711): CodeIgniter\Model->update()
+#8 /opt/lampp/htdocs/ci4_biblioteca/app/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+#9 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+#10 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /opt/lampp/htdocs/ci4_biblioteca/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /opt/lampp/htdocs/ci4_biblioteca/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 /opt/lampp/htdocs/ci4_biblioteca/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2024-06-21 17:44:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 5 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:44:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 7 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+CRITICAL - 2024-06-21 17:44:11 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`biblioteca`.`livro`, CONSTRAINT `livro_ibfk_1` FOREIGN KEY (`id_obra`) REFERENCES `obra` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2474): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(393): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(987): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(807): CodeIgniter\BaseModel->update()
+ 8 SYSTEMPATH/BaseModel.php(711): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/Livro.php(54): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->salvar()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 17:49:50 --> ErrorException: Undefined variable $listaAutoresObras
+in APPPATH/Views/livro/edit.php on line 23.
+ 1 APPPATH/Views/livro/edit.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Livro.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->editar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-21 17:54:26 --> ErrorException: Undefined variable $listaAutoresObras
+in APPPATH/Views/livro/edit.php on line 23.
+ 1 APPPATH/Views/livro/edit.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/opt/lampp/htdocs/ci4_biblioteca/app/Views/livro/edit.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Livro.php(45): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Livro->editar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/opt/lampp/htdocs/ci4_biblioteca/public/index.php')
+INFO - 2024-06-21 17:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-21 17:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

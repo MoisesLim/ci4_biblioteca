@@ -54,7 +54,7 @@
                 </div>
                 <div class="form-group">
                     <label for="telefone">Telefone</label>
-                    <input id="telefone" name="telefone" maxlength="15" placeholder="(00) 00000-0000" type="text" class="form-control" required>
+                    <input id="telefone" name="telefone"  maxlength="15" placeholder="(00) 00000-0000"  type="text" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label for="turma">Turma</label>
@@ -100,4 +100,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function formatTelefone(telefone) {
+    telefone = telefone.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+    telefone = telefone.replace(/(\d{2})(\d)/, "($1) $2"); // Coloca parênteses ao redor dos dois primeiros dígitos e espaço depois
+    telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2"); // Coloca um hífen entre o quinto e o sexto dígitos
+    return telefone;
+}
+
+document.getElementById('telefone').addEventListener('input', function (e) {
+    e.target.value = formatTelefone(e.target.value);
+});
+
+document.getElementById('cpf').addEventListener('input', function (e) {
+    let value = e.target.value;
+    value = value.replace(/\D/g, ''); // Remove qualquer coisa que não seja dígito
+    value = value.replace(/^(\d{3})(\d)/, '$1.$2'); // Adiciona ponto após os primeiros 3 dígitos
+    value = value.replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3'); // Adiciona ponto após os próximos 3 dígitos
+    value = value.replace(/\.(\d{3})(\d)/, '.$1-$2'); // Adiciona hífen antes dos últimos 2 dígitos
+    e.target.value = value.substring(0, 14); // Limita a entrada a 14 caracteres
+});
+
 </script>

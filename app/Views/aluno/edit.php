@@ -16,6 +16,14 @@
                 </div>
                 <div class="row p-2">
                     <div class="col-2">
+                        <label for="cpf">CPF</label>
+                    </div>
+                    <div class="col-10">
+                        <input disabled type="text" name="cpf" id="cpf" class="form_control" value='<?=$aluno['cpf']?>'>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-2">
                         <label for="nome">Email</label>
                     </div>
                     <div class="col-10">
