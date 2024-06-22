@@ -74,4 +74,14 @@ function formatTelefone(telefone) {
 document.getElementById('telefone').addEventListener('input', function (e) {
     e.target.value = formatTelefone(e.target.value);
 });
+
+document.getElementById('cpf').addEventListener('input', function (e) {
+        let value = e.target.value;
+            value = value.replace(/\D/g, ''); // Remove qualquer coisa que não seja dígito
+                value = value.replace(/^(\d{3})(\d)/, '$1.$2'); // Adiciona ponto após os primeiros 3 dígitos
+                    value = value.replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3'); // Adiciona ponto após os próximos 3 dígitos
+                        value = value.replace(/\.(\d{3})(\d)/, '.$1-$2'); // Adiciona hífen antes dos últimos 2 dígitos
+                            e.target.value = value.substring(0, 14); // Limita a entrada a 14 caracteres
+                            });
+})
 </script>
